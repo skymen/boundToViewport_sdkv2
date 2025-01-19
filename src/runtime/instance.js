@@ -10,8 +10,8 @@ export default function (parentClass) {
       this.mode = 0;
       this._enabled = false;
       if (properties) {
-        this.mode = properties[MODE];
-        this.enabled = properties[ENABLED];
+        this.mode = properties[0];
+        this.enabled = properties[1];
       }
     }
 
@@ -47,29 +47,23 @@ export default function (parentClass) {
       const layer = wi.layer;
       const viewport = layer.getViewport();
       if (this.mode === 0) {
-        wi.x = Math.max(
-          Math.min(wi.x, viewport.getRight()),
-          viewport.getLeft()
-        );
-        wi.y = Math.max(
-          Math.min(wi.y, viewport.getBottom()),
-          viewport.getTop()
-        );
+        wi.x = Math.max(Math.min(wi.x, viewport.right), viewport.left);
+        wi.y = Math.max(Math.min(wi.y, viewport.bottom), viewport.top);
       } else {
         const bbox = wi.getBoundingBox();
         let offX = 0;
         let offY = 0;
-        if (bbox.getLeft() < viewport.getLeft()) {
-          offX = -(bbox.getLeft() - viewport.getLeft());
+        if (bbox.left < viewport.left) {
+          offX = -(bbox.left - viewport.left);
         }
-        if (bbox.getTop() < viewport.getTop()) {
-          offY = -(bbox.getTop() - viewport.getTop());
+        if (bbox.top < viewport.top) {
+          offY = -(bbox.top - viewport.top);
         }
-        if (bbox.getRight() > viewport.getRight()) {
-          offX = -(bbox.getRight() - viewport.getRight());
+        if (bbox.right > viewport.right) {
+          offX = -(bbox.right - viewport.right);
         }
-        if (bbox.getBottom() > viewport.getBottom()) {
-          offY = -(bbox.getBottom() - viewport.getBottom());
+        if (bbox.bottom > viewport.bottom) {
+          offY = -(bbox.bottom - viewport.bottom);
         }
         wi.offsetPosition(offX, offY);
       }
