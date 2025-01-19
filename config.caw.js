@@ -5,7 +5,7 @@ import {
   PROPERTY_TYPE,
 } from "./template/enums.js";
 import _version from "./version.js";
-export const addonType = ADDON_TYPE.PLUGIN;
+export const addonType = ADDON_TYPE.BEHAVIOR;
 export const type = PLUGIN_TYPE.OBJECT;
 export const id = "sample_addon";
 export const name = "Sample Addon";
