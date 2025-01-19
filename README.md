@@ -1,9 +1,9 @@
 <img src="./examples/cover.webp" width="150" /><br>
 # Bound To Viewport
 <i>Bounds the instance to the viewport</i> <br>
-### Version 2.0.0.0
+### Version 2.0.0.1
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/boundToViewport_sdkv2/releases/download/skymen_BoundToViewport-2.0.0.0.c3addon/skymen_BoundToViewport-2.0.0.0.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/boundToViewport_sdkv2/releases/download/skymen_BoundToViewport-2.0.0.1.c3addon/skymen_BoundToViewport-2.0.0.1.c3addon)
 <br>
 <sub> [See all releases](https://github.com/skymen/boundToViewport_sdkv2/releases) </sub> <br>
 
