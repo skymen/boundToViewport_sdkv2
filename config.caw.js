@@ -7,13 +7,14 @@ import {
 import _version from "./version.js";
 export const addonType = ADDON_TYPE.BEHAVIOR;
 export const type = PLUGIN_TYPE.OBJECT;
-export const id = "sample_addon";
-export const name = "Sample Addon";
+export const id = "skymen_BoundToViewport";
+export const name = "Bound To Viewport";
 export const version = _version;
 export const author = "skymen";
-export const website = "https://www.construct.net";
-export const documentation = "https://www.construct.net";
-export const description = "Description";
+export const website = "https://github.com/skymen/boundToViewport_sdkv2";
+export const documentation =
+  "https://www.construct.net/en/make-games/addons/544/bound-viewport/documentation";
+export const description = "Bounds the instance to the viewport";
 export const category = ADDON_CATEGORY.GENERAL;
 
 export const hasDomside = false;
@@ -36,7 +37,7 @@ export const info = {
     GooglePlayServicesEnabled: false,
 
     // BEHAVIOR only
-    IsOnlyOneAllowed: false,
+    IsOnlyOneAllowed: true,
 
     // PLUGIN world only
     IsResizable: false,
@@ -50,7 +51,7 @@ export const info = {
     MustPreDraw: false,
 
     // PLUGIN object only
-    IsSingleGlobal: true,
+    IsSingleGlobal: false,
   },
   // PLUGIN only
   AddCommonACEs: {
@@ -100,4 +101,23 @@ export const properties = [
     desc: "Property Description",
   }
   */
+  {
+    id: "bind",
+    name: "Bind Mode",
+    desc: "The mode to bind the instance to the viewport",
+    type: PROPERTY_TYPE.COMBO,
+    options: {
+      initialValue: "origin",
+      items: [{ origin: "Origin" }, { edge: "Edge" }],
+    },
+  },
+  {
+    id: "enabled",
+    name: "Enabled",
+    desc: "Enable or disable the behavior",
+    type: PROPERTY_TYPE.CHECK,
+    options: {
+      initialValue: true,
+    },
+  },
 ];
