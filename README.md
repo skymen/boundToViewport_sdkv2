@@ -1,14 +1,16 @@
 <img src="./examples/cover.webp" width="150" /><br>
-# Sample Addon
-<i>Description</i> <br>
-### Version 1.0.0.0
+# Bound To Viewport
+<i>Bounds the instance to the viewport</i> <br>
+### Version 2.0.0.0
 
-[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/boundToViewport_sdkv2/releases/download/sample_addon-1.0.0.0.c3addon/sample_addon-1.0.0.0.c3addon)
+[<img src="https://placehold.co/200x50/4493f8/FFF?text=Download&font=montserrat" width="200"/>](https://github.com/skymen/boundToViewport_sdkv2/releases/download/skymen_BoundToViewport-2.0.0.0.c3addon/skymen_BoundToViewport-2.0.0.0.c3addon)
 <br>
 <sub> [See all releases](https://github.com/skymen/boundToViewport_sdkv2/releases) </sub> <br>
 
 ---
 <b><u>Author:</u></b> skymen <br>
+<b>[Construct Addon Page](https://www.construct.net/en/make-games/addons/544/bound-viewport)</b>  <br>
+<b>[Documentation](https://www.construct.net/en/make-games/addons/544/bound-viewport/documentation)</b>  <br>
 <sub>Made using [CAW](https://marketplace.visualstudio.com/items?itemName=skymen.caw) </sub><br>
 
 ## Table of Contents
@@ -35,37 +37,34 @@ npm run dev
 ```
 
 ## Examples Files
+</br>
+- [Simple Implementation](https://github.com/skymen/boundToViewport_sdkv2/raw/refs/heads/main/examples/Simple%20Implementation.c3p)
+</br>
 
 ---
 ## Properties
 | Property Name | Description | Type |
 | --- | --- | --- |
+| Bind Mode | The mode to bind the instance to the viewport | combo |
+| Enabled | Enable or disable the behavior | check |
 
 
 ---
 ## Actions
 | Action | Description | Params
 | --- | --- | --- |
-| Sample Action | This is a sample action | Param1             *(string)* <br> |
-| Sample Action Async | This is a sample action |  |
-| Sample Action Combo | This is a sample action | Param1             *(combo)* <br> |
-| Sample Action | This is a sample action | Param1             *(string)* <br> |
+| Set Enabled | Enable or disable the behavior | Enabled             *(combo)* <br> |
+| Set Mode | Set the mode | Mode             *(combo)* <br> |
 
 
 ---
 ## Conditions
 | Condition | Description | Params
 | --- | --- | --- |
-| Sample Condition | This is a sample condition | Param1 *(string)* <br> |
-| Sample Trigger | This is a sample trigger |  |
-| Sample Condition | This is a sample condition | Param1 *(combo)* <br> |
-| Sample Condition | This is a sample condition |  |
+| Is Enabled | Whether the behavior is enabled |  |
 
 
 ---
 ## Expressions
 | Expression | Description | Return Type | Params
 | --- | --- | --- | --- |
-| Expression | Sample Expression | number |  | 
-| Expression2 | Sample Expression | string |  | 
-| SampleExpression | This is a sample expression | string |  | 

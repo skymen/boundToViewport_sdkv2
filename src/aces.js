@@ -20,9 +20,7 @@ action(
         desc: "Enabled or disabled",
         type: "combo",
         initialValue: "disabled",
-        options: {
-          items: [{ enabled: "Enabled" }, { disabled: "Disabled" }],
-        },
+        items: [{ enabled: "Enabled" }, { disabled: "Disabled" }],
       },
     ],
   },
@@ -50,9 +48,7 @@ action(
         desc: "The mode to set",
         type: "combo",
         initialValue: "origin",
-        options: {
-          items: [{ origin: "Origin" }, { edge: "Edge" }],
-        },
+        items: [{ origin: "Origin" }, { edge: "Edge" }],
       },
     ],
   },
